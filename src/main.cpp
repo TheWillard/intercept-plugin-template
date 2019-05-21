@@ -18,6 +18,11 @@ void intercept::pre_init() {
 }
 
 void intercept::post_start() {
+
+    __SQF(
+        _test = 1;
+    );
+
     __SQF(
         _pos = getPos player;
         player sideChat format["Player Pos: %1", _pos];
